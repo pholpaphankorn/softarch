@@ -16,7 +16,7 @@ public class JSONBookMetadataFormatter implements BookMetadataFormatter {
         jsonBooks =new JSONObject();
         jsonBookArray =new JSONArray();
         jsonBooks.put("Books", jsonBookArray);
-        return null;
+        return this;
     }
 
     @Override
