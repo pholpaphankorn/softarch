@@ -1,12 +1,12 @@
 package edu.parinya.softarchdesign.structural;
 
 import java.util.Set;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class HealthcareWorkerTeam implements HealthcareServiceable{
     private Set<HealthcareServiceable> members;
     public HealthcareWorkerTeam(){
-        this.members=new HashSet<HealthcareServiceable>();
+        this.members=new LinkedHashSet<HealthcareServiceable>();
     }
     public void addMember(HealthcareServiceable member){
         members.add(member);
